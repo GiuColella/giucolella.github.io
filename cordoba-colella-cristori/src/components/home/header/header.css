@@ -53,16 +53,15 @@
     font-size: medium;
 }
 .boton_explorar:hover {
-    color: rgb(0, 194, 77);
-
+    color: #CBA717;
 }
 
 .boton_calendario:hover {
-    color: rgb(0, 194, 77);
+    color: #CBA717;
 }
 
 .boton_contactos:hover {
-    color: rgb(0, 194, 77);
+    color: #CBA717;
 }
 
 .menu_user {

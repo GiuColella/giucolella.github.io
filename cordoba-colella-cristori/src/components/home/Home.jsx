@@ -2,6 +2,7 @@ import Header from './header/Header';
 import Navbar from './navbar/Navbar';
 import './home.css'
 
+
 export default function Home(){
 
     return(

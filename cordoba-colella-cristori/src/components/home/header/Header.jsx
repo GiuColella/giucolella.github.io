@@ -6,7 +6,7 @@ export default function Header() {
         <>
             <div className='content_header'>
                 <div className='header_logo'>
-                    <img className="logo" src="logo1.png" alt="" />
+                    <img className="logo" src="Logo.jpg" alt="" />
                 </div>
                 <div className='header_menu'>
                     <ul className='menu'>
