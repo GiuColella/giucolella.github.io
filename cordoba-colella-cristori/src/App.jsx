@@ -1,14 +1,22 @@
-import Home from "./components/home/Home"
-import HomeLog from "./components/login-register/HomeLog"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Home from './components/home/Home';
+import Calendario from './components/home/calendario/Calendario';
 
 function App() {
-
   return (
-    <>
-     <Home/>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/calendario" element={<Calendario/>} />
+        <Route />
+        <Route />
+        <Route />
+        <Route />
+        <Route />
 
+      </Routes>
+    </BrowserRouter>
+  );
+}
 export default App

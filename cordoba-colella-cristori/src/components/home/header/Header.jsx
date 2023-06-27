@@ -1,3 +1,4 @@
+import Calendario from '../calendario/Calendario';
 import './header.css'
 
 export default function Header() {
@@ -21,7 +22,7 @@ export default function Header() {
                             </div>
                         </li>
                         <li className='menu_element'>
-                            <a className='boton_calendario' href="">Calendario</a>
+                            <a className='boton_calendario' href=''>Calendario</a>
                         </li>
                         <li className='menu_element'>
                             <a className='boton_contactos' href="">Contactos</a>
