@@ -10,7 +10,7 @@ export default function HomeLog() {
                     <div className="box_img">
                         <img src="/O.jpg" alt="logo" />
                     </div>
-                    <h1 className=''>Login</h1>
+                    <h1 className='txt_log'>Login</h1>
                     <form>
                         <div className='content__main'>
                             <div className='content__main_inp'>
@@ -21,31 +21,27 @@ export default function HomeLog() {
                                 <img className='icon_txt' src="./icons/candado-cerrado.png" alt="" />
                                 <input className="box_txt" type="password" placeholder="Contraseña" />
                             </div>
-                            <div>
+                            <div className='btn_recorder'>
                                 <input className="" type="checkbox" />
                                 <p>Recordarme</p>
                             </div>
                         </div>
-
                         <div className="">
-
-                            <div className="">
-                                <a href="#" className="">
+                                <a href="#" className="txt_olvPass">
                                     Olvidaste tu contraseña?
                                 </a>
+                            <div className='contenedor_btn'>
+                                <button className='btn_login'>Iniciar Sesión</button>
                             </div>
-                        </div>
-                        <div>
-                            <a className="" href="/html/menu.html">
-                                Login
-                            </a>
                         </div>
                     </form>
                     <div className="">
-                        <div>No tienes cuenta?</div>
-                        <a href="#" className="">
-                            Registrarse
-                        </a>
+                        <div>
+                            <p>No tienes cuenta?</p>
+                            <a href="#" className="">
+                                Registrarse
+                            </a>
+                        </div>
                     </div>
                 </div>
 

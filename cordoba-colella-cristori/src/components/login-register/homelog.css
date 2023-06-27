@@ -43,10 +43,34 @@
     border-image: initial;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
+    background-color: #aaa821;
 }
 
 .content__main {
     display: flex;
     flex-direction: column;
+    margin-top: 1.5rem;
 
+}
+.contenedor_btn{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.btn_login{
+    width: 80%;
+    padding: 0.4rem 1rem;
+    background-color: #2b2b2b;
+    border: 1px solid #ddb513;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px #CBA717;
+}
+.btn_recorder{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 0.5rem;
+}
+.txt_olvPass{
+    display: flex;
+    grid-gap: 0.5rem;
 }

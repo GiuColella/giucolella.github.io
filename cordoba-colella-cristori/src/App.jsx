@@ -1,4 +1,4 @@
-import Home from "./components/home/home"
+import Home from "./components/home/Home"
 import HomeLog from "./components/login-register/HomeLog"
 
 
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <HomeLog/>
+     <Home/>
     </>
   )
 }
