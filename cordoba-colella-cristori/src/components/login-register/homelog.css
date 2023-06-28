@@ -59,11 +59,12 @@
 }
 .btn_login{
     width: 80%;
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1rem;
     background-color: #2b2b2b;
     border: 1px solid #ddb513;
     border-radius: 1rem;
     box-shadow: 0 0 8px #CBA717;
+    text-align: center;
 }
 .btn_recorder{
     display: flex;
