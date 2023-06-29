@@ -75,3 +75,7 @@
     display: flex;
     grid-gap: 0.5rem;
 }
+.txt_reg{
+    display: flex;
+    grid-gap: 0.3rem;
+}

@@ -1,4 +1,4 @@
-import Calendario from '../calendario/Calendario';
+import { Link } from 'react-router-dom';
 import './header.css'
 
 export default function Header() {
@@ -7,25 +7,26 @@ export default function Header() {
         <>
             <div className='content_header'>
                 <div className='header_logo'>
+                    <Link to='/'>
                     <img className="logo" src="Logo.jpg" alt="" />
+                    </Link>
                 </div>
                 <div className='header_menu'>
                     <ul className='menu'>
                         <li className='menu_element'>
-                            <div className='dropdown'>
-                                <button className='boton_explorar'>Explorar</button>
-                                <div className='dropdown_cont'>
-                                    <a href="">opc1</a>
-                                    <a href="">opc2</a>
-                                    <a href="">opc3</a>
-                                </div>
-                            </div>
+                            <Link to='/' className='boton_explorar'>
+                            Inicio
+                            </Link>
                         </li>
                         <li className='menu_element'>
-                            <a className='boton_calendario' href=''>Calendario</a>
+                            <Link to='/calendario' className='boton_calendario'>
+                                Calendario
+                            </Link>
                         </li>
                         <li className='menu_element'>
-                            <a className='boton_contactos' href="">Contactos</a>
+                            <Link to='/contactos' className='boton_contactos'>
+                            Integrantes
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -44,12 +45,12 @@ export default function Header() {
                                 </svg>
                             </li>
                         </ul>
-                    </div> 
+                    </div>
                     <div className='user_logo'>
                         <div className="user">
-                            <a href=''>
+                            <Link to='/login'>
                                 <img className='user_img' src="slime.png" alt="" />
-                            </a>
+                            </Link>
                         </div>
 
                     </div>

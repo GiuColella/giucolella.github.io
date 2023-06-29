@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-
 function HomeReg() {
+
+    
 
 
     return (
@@ -16,16 +17,13 @@ function HomeReg() {
                     <div className='content__main'>
                         <div className='content__main_inp'>
                             <img className='icon_txt' src="./icons/usuario.png" alt="" />
-                            <input className="box_txt" type="text" placeholder="Usuario" required/>
+                            <input className="box_txt" type="text" placeholder="Usuario" />
                         </div>
                         <div className='content__main_inp'>
                             <img className='icon_txt' src="./icons/candado-cerrado.png" alt="" />
-                            <input className="box_txt" type="password" placeholder="Contraseña" required/>
+                            <input className="box_txt" type="password" placeholder="Contraseña" />
                         </div>
-                        <div className='content__main_inp'>
-                            <img className='icon_txt' src="./icons/candado-cerrado.png" alt="" />
-                            <input className="box_txt" type="password" placeholder="Confirmar Contraseña" />
-                        </div>
+                        
                     </div>
                     <div className="">
                         <div className='contenedor_btn'>

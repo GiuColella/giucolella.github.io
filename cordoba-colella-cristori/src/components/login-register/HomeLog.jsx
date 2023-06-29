@@ -1,26 +1,23 @@
-
 import { Link } from 'react-router-dom';
 import './homelog.css'
 
-
-// function loguear()
-// {
-//     let user=document.getElementById("usuario").Value;
-//     let pass=document.getElementById("password").value;
-//     if (user=="am@gmail.com" && pass=="1234")
-//     {
-//         const a = document.createElement ('a')
-//         window.location=""
-//         localStorage.usuario=user
-//         localStorage.contraseña=pass
-//     }
-//     else
-//     {
-//         alert("Usuario Incorrecto");
-//     }
-// }
-
 export default function HomeLog() {
+    const loguear = () => {
+        let user = document.getElementById("usuario").value;
+        let pass = document.getElementById("password").value;
+        if (user === "asd" && pass === "123") {
+
+            localStorage.setItem("usuario", user);
+            localStorage.setItem("contraseña", pass);
+            alert("Usuario Correcto")
+
+
+        } else {
+            window.location.reload();
+            alert("Usuario Incorrecto");
+            window.location.reload();
+        }
+    }
 
     return (
         <>
@@ -30,7 +27,7 @@ export default function HomeLog() {
                         <img src='/O.jpg' alt='logo' />
                     </div>
                     <h1 className='txt_log'>Login</h1>
-                    <form>
+                    <form id='formulario'>
                         <div className='content__main'>
                             <div className='content__main_inp'>
                                 <img className='icon_txt' src='./icons/usuario.png' alt='' />
@@ -50,20 +47,20 @@ export default function HomeLog() {
                                 Olvidaste tu contraseña?
                             </a>
                             <div className='contenedor_btn'>
-                                <Link to='/Home' className='btn_login'>
-                                    Iniciar Sesión
+                            <Link to="/home">
+                                <button className='btn_login' onClick={loguear}>
+                                      Iniciar Sesión 
+                                </button>
                                 </Link>
-
+                 
                             </div>
                         </div>
                     </form>
-                    <div className=''>
-                        <div>
-                            <p>No tienes cuenta?</p>
-                            <Link to='/register'>
-                                Registrarse
-                            </Link>
-                        </div>
+                    <div className='txt_reg'>
+                        <p>No tienes cuenta?</p>
+                        <Link to='/register'>
+                            Registrarse
+                        </Link>
                     </div>
                 </div>
 
