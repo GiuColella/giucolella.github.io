@@ -4,6 +4,7 @@ import './home.css'
 import Footer from './footer/Footer';
 import Carrousel from './carrousel/Carrousel';
 import Main from './main/Main';
+import { useEffect } from 'react';
 
 
 
@@ -17,7 +18,9 @@ export default function Home(){
         '/sliderTrigun.png',
         '/sliderDeath.png',
     ];
-
+    useEffect(() => {
+        document.title = `Oni.Chan`;
+      });
     return(
         <>
         <div className='cont__home'>

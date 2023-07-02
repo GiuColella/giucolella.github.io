@@ -5,7 +5,7 @@ import Footer from '../footer/Footer'
 
 const msjDay = 'Los horarios estarán pronto disponibles'
 
-function Calendario(props) {
+function Calendario() {
 
     return (
 

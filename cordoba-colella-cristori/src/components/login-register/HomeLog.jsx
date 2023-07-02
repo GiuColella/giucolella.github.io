@@ -3,15 +3,14 @@ import './homelog.css'
 
 export default function HomeLog() {
     const loguear = () => {
-        let user = document.getElementById("usuario").value;
-        let pass = document.getElementById("password").value;
+        let user = document.getElementById("usuar").value;
+        let pass = document.getElementById("passw").value;
         if (user === "asd" && pass === "123") {
 
             localStorage.setItem("usuario", user);
             localStorage.setItem("contraseña", pass);
             alert("Usuario Correcto")
-
-
+         
         } else {
             window.location.reload();
             alert("Usuario Incorrecto");
@@ -31,11 +30,11 @@ export default function HomeLog() {
                         <div className='content__main'>
                             <div className='content__main_inp'>
                                 <img className='icon_txt' src='./icons/usuario.png' alt='' />
-                                <input id='usuario' className='box_txt' type='text' placeholder='Usuario' />
+                                <input id='usuar' className='box_txt' type='text' placeholder='Usuario' />
                             </div>
                             <div className='content__main_inp'>
                                 <img className='icon_txt' src='./icons/candado-cerrado.png' alt='' />
-                                <input id='password' className='box_txt' type='password' placeholder='Contraseña' />
+                                <input id='passw' className='box_txt' type='password' placeholder='Contraseña' />
                             </div>
                             <div className='btn_recorder'>
                                 <input className='' type='checkbox' />
@@ -47,8 +46,8 @@ export default function HomeLog() {
                                 Olvidaste tu contraseña?
                             </a>
                             <div className='contenedor_btn'>
-                            <Link to="/home">
-                                <button className='btn_login' onClick={loguear}>
+                            <Link to="/" className='btn_login'>
+                                <button  onClick={loguear}>
                                       Iniciar Sesión 
                                 </button>
                                 </Link>
@@ -59,6 +58,7 @@ export default function HomeLog() {
                     <div className='txt_reg'>
                         <p>No tienes cuenta?</p>
                         <Link to='/register'>
+                            
                             Registrarse
                         </Link>
                     </div>
